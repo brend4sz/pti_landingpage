@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppinsregular;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: black;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.interface{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: black;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: yellow;
+    text-shadow: 0 0 25px yellow;
+    transform: scale(1.1);
+}
+span{
+    color: yellow;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 easy;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: yellow;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+header .btn-contato:hover button{
+    background-color: yellow;
+    box-shadow: 0 0 25px yellow;
+    color: black;
+    cursor: pointer;
+}
+
+.sobre{
+    width: 100vw;
+    min-height: 100vh; /* Garante altura mínima de 100% da viewport */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 12%;
+    gap: 7em;
+    background: white;
+}
+
+.sobre-content{
+    width: 100%;
+}
+
+.sobre-content h2{
+    font-size: 30px;
+    color: black;
+}
+
+.sobre-content h1{
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: poppinsbold;
+}
+
+.sobre-content p{
+    font-size: 17px;
+    margin: 25px 0 30px;
+}
+.sobre-content b{
+    font-family: poppinsbold;
+    color: grey;
+}
+
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.img-sobre-mim img{
+    width: 300px;
+    box-shadow: 0 0 25px yellow;
+}
+
+.beneficios {
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 12%;
+    gap: 7em;
+    background: black;
+}
+
+.beneficios-img img{
+    position: relative;
+    width: 300px;
+    box-shadow: 0 0 25px yellow;
+}
+
+.beneficios-content h2{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+
+}
+
+.beneficios-content h1{
+    font-size: 50px;
+    color: white;
+    font-family: poppinsbold;
+}
+
+.beneficios-content p{
+    color: white;
+    font-size: 17px;
+    margin: 2em 0 3em;
+}
+
+.btn-2{
+    padding: 15px 28px;
+    background-color: yellow;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    
+}
+
+.btn-2:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.planos{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.planos-content{
+    max-width: 800px;
+}
+
+.planos-content h4{
+    font-size: 30px;
+    color: black;
+}
+
+.planos-content h5{
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: poppinsbold;
+}
+
+.planos-content p{
+    font-size: 17px;
+    margin: 25px 0 30px;
+}
+.section-title{
+    margin-top: 32px;
+}
+
+.planos{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 12%;
+    gap: 2em;
+    background: white;
+
+}
+
+.section-title{
+    font-size: 30px;
+
+}
+
+.plans{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0px 0px 12px 4px yellow;
+}
+
+.plan-title{
+    color: white;
+}
+
+.plan-description{
+    color: white;
+    text-align: center;
+}
+
+.resultados{
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 12%;
+    gap: 7em;
+    background: black;
+}
+
+
+.resultados-content h2{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    font-family: poppinslight;
+}
+
+.resultados-content h1{
+    font-size: 50px;
+    color: white;
+    font-family: poppinsbold;
+}
+
+.resultados-content p{
+    font-size: 17px;
+    margin: 25px 0 30px;
+    color: white;
+}
+
+.resultados-img img{
+    position: relative;
+    width: 300px;
+    box-shadow: 0 0 25px yellow;
+}
+
+.contact-form {
+    min-height: 100vh; /* Garante que o formulário ocupe a altura total da tela */
+    background-color: white; /* Adicione se precisar de um fundo preto como as outras seções */
+    padding: 3em 12%; /* Ajuste o padding lateral para alinhar com as outras seções */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 30px;
+    color: black; /* Certifique-se de que o título tenha cor branca */
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 0.4em;
+    font-size: 18px;
+    color: white;
+    background: black;
+    border-radius: .8rem;
+    margin: 0.2em 0;
+    resize: none;
+}
+
+.contact-form form .input-box input::placeholder,
+.contact-form form textarea::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 1020px) {
+    .sobre{
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .img-sobre-mim img{
+        width: 60%;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+
+    
+    .beneficios{
+        flex-direction: column;
+        gap: 30px;
+    }
+ 
+    .beneficios-img img{
+        width: 60%;
+        margin-left: 70px;   
+    }
+
+    .plans {
+        flex-direction: column; 
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .plan {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .resultados{
+        flex-direction: column-reverse;
+    }
+
+    .resultados-img img{
+        width: 60%;
+        margin-left: 70px;  
+    }
+
+    /* Cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none; /* Esconde o menu na visualização mobile */
+    }
+
+    .contact-form{
+        padding: 20px;
+    }
+}
